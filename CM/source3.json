@@ -1,0 +1,30 @@
+[
+    {
+        "id_client": "C001",
+        "nom": "Durand",
+        "prenom": "Alice",
+        "email": "alice.durand@example.com",
+        "ville": "Lyon",
+        "telephone": "0612457890",
+        "typeClient": "Particulier"
+    },
+    {
+        "id_client": "C002",
+        "nom": "Martin",
+        "prenom": "Jean",
+        "email": "jean.martin@example.com",
+        "ville": "Paris",
+        "dateNaissance": "1979-11-05",
+        "genre": "M",
+        "typeClient": "Professionnel"
+    },
+    {
+        "id_client": "C003",
+        "nom": "Nguyen",
+        "prenom": "Thi",
+        "email": "thi.nguyen@example.com",
+        "codePostalClient": "13000",
+        "dateNaissance": "1992-06-23",
+        "genre": "F"
+    }
+]
