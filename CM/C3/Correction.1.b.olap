@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="1">
+    <version>generic schema v.1</version>
+    <name>TD_Integration</name>
+    <components>
+        <fact id="2">
+            <name>Vente</name>
+            <attributes>
+                <measure id="3">
+                    <name>CA</name>
+                    <datatype>0</datatype>
+                    <type>measure</type>
+                </measure>
+            </attributes>
+        </fact>
+        <dimension id="5">
+            <name>Client_MD</name>
+            <attributes/>
+            <hierarchies/>
+        </dimension>
+        <dimension id="7">
+            <name>Produit_MD</name>
+            <attributes>
+                <parameter id="16">
+                    <name>idProduit</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes>
+                        <weakattribute id="17">
+                            <name>nomProduit</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                        <weakattribute id="18">
+                            <name>prixUnitaire</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                    </weakattributes>
+                </parameter>
+                <parameter id="19">
+                    <name>idCategory</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes>
+                        <weakattribute id="24">
+                            <name>nomCategory</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                        <weakattribute id="25">
+                            <name>description</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                    </weakattributes>
+                </parameter>
+            </attributes>
+            <hierarchies>
+                <hierarchy id="20">
+                    <name>H_Produ01</name>
+                    <type>strict</type>
+                    <levels>
+                        <level id="21">
+                            <parameter_id>16</parameter_id>
+                            <levelPosition>1</levelPosition>
+                        </level>
+                        <level id="22">
+                            <parameter_id>19</parameter_id>
+                            <levelPosition>2</levelPosition>
+                            <link id="23">
+<name>H_Produ01</name>
+<lower_param_id>16</lower_param_id>
+<upper_param_id>19</upper_param_id>
+<levelposition>2</levelposition>
+<type>strict</type>
+                            </link>
+                        </level>
+                    </levels>
+                </hierarchy>
+            </hierarchies>
+        </dimension>
+        <dimension id="9">
+            <name>Temp_MD</name>
+            <attributes>
+                <parameter id="26">
+                    <name>dateCommande</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes/>
+                </parameter>
+                <parameter id="27">
+                    <name>mois</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes/>
+                </parameter>
+                <parameter id="32">
+                    <name>année</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes/>
+                </parameter>
+            </attributes>
+            <hierarchies>
+                <hierarchy id="28">
+                    <name>H_Temp_01</name>
+                    <type>strict</type>
+                    <levels>
+                        <level id="29">
+                            <parameter_id>26</parameter_id>
+                            <levelPosition>1</levelPosition>
+                        </level>
+                        <level id="30">
+                            <parameter_id>27</parameter_id>
+                            <levelPosition>2</levelPosition>
+                            <link id="31">
+<name>H_Temp_01</name>
+<lower_param_id>26</lower_param_id>
+<upper_param_id>27</upper_param_id>
+<levelposition>2</levelposition>
+<type>strict</type>
+                            </link>
+                        </level>
+                        <level id="33">
+                            <parameter_id>32</parameter_id>
+                            <levelPosition>3</levelPosition>
+                            <link id="34">
+<name></name>
+<lower_param_id>27</lower_param_id>
+<upper_param_id>32</upper_param_id>
+<levelposition>3</levelposition>
+<type>strict</type>
+                            </link>
+                        </level>
+                    </levels>
+                </hierarchy>
+            </hierarchies>
+        </dimension>
+    </components>
+    <links>
+        <starlink id="6">
+            <name>Vente-Client</name>
+            <fact_id>2</fact_id>
+            <dimension_id>5</dimension_id>
+        </starlink>
+        <starlink id="8">
+            <name>Vente-Produit</name>
+            <fact_id>2</fact_id>
+            <dimension_id>7</dimension_id>
+        </starlink>
+        <starlink id="10">
+            <name>Vente-Temp_MD</name>
+            <fact_id>2</fact_id>
+            <dimension_id>9</dimension_id>
+        </starlink>
+    </links>
+</schema>
