@@ -6,7 +6,7 @@ END;
 /
 
 CREATE TABLE Commande (
-    idCommande     NUMBER,
+    idCommande     NUMBER(3),
     dateCommande   DATE,
     idClient       VARCHAR2(10)
 );
@@ -20,9 +20,9 @@ CREATE TABLE Produit (
 );
 
 CREATE TABLE Contenir (
-    idCommande     NUMBER,
+    idCommande     NUMBER(3),
     idProduit      VARCHAR2(10),
-    quantite       NUMBER
+    quantite       NUMBER(5)
 );
 
 
@@ -49,6 +49,17 @@ INSERT ALL
     INTO Contenir (idCommande, idProduit, quantite) VALUES (3, 'P003', 1)
 SELECT * FROM DUAL;
 
+
+ALTER TABLE Commande
+ADD CONSTRAINT pk_commande PRIMARY KEY (idCommande);
+
+ALTER TABLE Produit
+ADD CONSTRAINT pk_produit PRIMARY KEY (idProduit);
+
+ALTER TABLE Contenir
+ADD CONSTRAINT pk_contenir PRIMARY KEY (idCommande, idProduit)
+ADD CONSTRAINT fk_contenir_commande FOREIGN KEY (idCommande) REFERENCES Commande(idCommande)
+ADD CONSTRAINT fk_contenir_produit FOREIGN KEY (idProduit) REFERENCES Produit(idProduit);
 
 
 SELECT * FROM commande;

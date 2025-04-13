@@ -15,8 +15,59 @@
         </fact>
         <dimension id="5">
             <name>Client_MD</name>
-            <attributes/>
-            <hierarchies/>
+            <attributes>
+                <parameter id="29">
+                    <name>idClient</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes>
+                        <weakattribute id="35">
+                            <name>nomClient</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                        <weakattribute id="36">
+                            <name>prenomClient</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                        <weakattribute id="37">
+                            <name>emailClient</name>
+                            <datatype>0</datatype>
+                            <type>weakattribute</type>
+                        </weakattribute>
+                    </weakattributes>
+                </parameter>
+                <parameter id="30">
+                    <name>villeClient</name>
+                    <datatype>0</datatype>
+                    <type>parameter</type>
+                    <weakattributes/>
+                </parameter>
+            </attributes>
+            <hierarchies>
+                <hierarchy id="31">
+                    <name>H_Clien01</name>
+                    <type>strict</type>
+                    <levels>
+                        <level id="32">
+                            <parameter_id>29</parameter_id>
+                            <levelPosition>1</levelPosition>
+                        </level>
+                        <level id="33">
+                            <parameter_id>30</parameter_id>
+                            <levelPosition>2</levelPosition>
+                            <link id="34">
+<name>H_Clien01</name>
+<lower_param_id>29</lower_param_id>
+<upper_param_id>30</upper_param_id>
+<levelposition>2</levelposition>
+<type>strict</type>
+                            </link>
+                        </level>
+                    </levels>
+                </hierarchy>
+            </hierarchies>
         </dimension>
         <dimension id="7">
             <name>Produit_MD</name>
@@ -140,12 +191,12 @@
     </components>
     <links>
         <starlink id="6">
-            <name>Vente-Client</name>
+            <name>Vente-Client_MD</name>
             <fact_id>2</fact_id>
             <dimension_id>5</dimension_id>
         </starlink>
         <starlink id="8">
-            <name>Vente-Produit</name>
+            <name>Vente-Produit_MD</name>
             <fact_id>2</fact_id>
             <dimension_id>7</dimension_id>
         </starlink>
