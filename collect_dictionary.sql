@@ -5,11 +5,12 @@ SELECT
         WHEN data_type = 'NUMBER'
             THEN
                 CASE
-                    WHEN data_precision IS NULL THEN 'Nombre'
-                    WHEN data_scale IS NULL OR data_scale=0 THEN 'Nombre de ' || data_precision || ' chiffres'
-                    ELSE 'Nombre de ' || data_precision || ' chiffres, dont ' || data_scale || ' décimales'
+                    WHEN data_precision IS NULL THEN 'Entier'
+                    WHEN data_scale IS NULL OR data_scale=0 THEN 'Entier de ' || data_precision || ' chiffres'
+                    ELSE 'Réel de ' || data_precision || ' chiffres, dont ' || data_scale || ' décimales'
                 END
         WHEN data_type = 'VARCHAR2' THEN 'Chaîne de ' || data_length || ' car.'
+        WHEN data_type = 'FLOAT' THEN 'Réel'
         ELSE INITCAP(data_type)
     END AS "Type et format",
     CASE
@@ -24,4 +25,6 @@ SELECT
         ELSE data_type
     END AS "Type de la BD"
 FROM USER_TAB_COLUMNS
-ORDER BY "Colonne/Attribut";
+ORDER BY
+    "Colonne/Attribut",
+    "Source de données";
