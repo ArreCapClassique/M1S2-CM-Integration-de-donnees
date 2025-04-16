@@ -1,0 +1,174 @@
+[ {
+  "baseItem" : {
+    "id" : "_6NhwUAp3EfCt2Ny9EkEelQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw - COMPANY",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_6Qso4BhIEfCSs9U-u7-LIA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "_s3L2AAUAEfCJ5v-hWUQqmw - magasins_v.1",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_h0TKMApMEfC5RMtyw1NKUw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw - COMPANY",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw - STOCK",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_kfxgQBSEEfCkE6fCC-sT3Q",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "built-in",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
+    "id" : "LOCAL_PROJECT:_6NhwUAp3EfCt2Ny9EkEelQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_6Qso4BhIEfCSs9U-u7-LIA",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_h0TKMApMEfC5RMtyw1NKUw",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_n5QM0AZHEfC6WrIKqlcbAg",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_t-TYwA-5EfC9oKQIj43idQ",
+    "version" : "Latest",
+    "type" : "job"
+  }, {
+    "id" : "LOCAL_PROJECT:_znTUMAdLEfCRVaPlCGzjzA",
+    "version" : "Latest",
+    "type" : "job"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_t-TYwA-5EfC9oKQIj43idQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_E0J50A4zEfCUTr016lnjuQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_E0J50A4zEfCUTr016lnjuQ - magasinsv.4.csv",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_uRtNsAmqEfCSyLzOP5nSog",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_Ef5ZYA-ZEfC3_KKRWcyu-w",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_RgjhEAmrEfCSyLzOP5nSog",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_kFIPgAmrEfCSyLzOP5nSog",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_wa7coAmtEfCSyLzOP5nSog",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_Ef5ZYA-ZEfC3_KKRWcyu-w - metadata",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_RgjhEAmrEfCSyLzOP5nSog - Source2",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kFIPgAmrEfCSyLzOP5nSog - COMMANDE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kFIPgAmrEfCSyLzOP5nSog - CONTENIR",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_kFIPgAmrEfCSyLzOP5nSog - PRODUIT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_wa7coAmtEfCSyLzOP5nSog - Source3",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_znTUMAdLEfCRVaPlCGzjzA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_E0J50A4zEfCUTr016lnjuQ",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_KLMx8ApMEfC5RMtyw1NKUw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_E0J50A4zEfCUTr016lnjuQ - magasinsv.4.csv",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]

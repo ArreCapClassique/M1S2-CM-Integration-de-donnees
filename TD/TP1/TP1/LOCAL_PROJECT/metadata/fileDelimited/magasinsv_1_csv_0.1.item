@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_s3Z4cAUAEfCJ5v-hWUQqmw" name="magasinsv.1.csv" id="_s3L2AAUAEfCJ5v-hWUQqmw" dataPackage="_s3gmIAUAEfCJ5v-hWUQqmw" Server="Localhost 127.0.0.1" FilePath="C:/Users/zhubo/OneDrive/Devoir/[INFO - M1 MIAGE - S2] CM Intégration de données/TD/TP1/magasins v.1.csv" Format="WINDOWS" Encoding="UTF-8" FieldSeparatorValue="&quot;,&quot;" RowSeparatorValue="&quot;\n&quot;" UseHeader="true" HeaderValue="1" FooterValue="0" LimitValue="" FirstLineCaption="true" EscapeType="CSV" EscapeChar="&quot;\&quot;&quot;" TextEnclosure="&quot;\&quot;&quot;" CsvOption="true" FieldSeparatorType="Comma"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_s3gmIAUAEfCJ5v-hWUQqmw" name="default" dataManager="_s3Z4cAUAEfCJ5v-hWUQqmw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_s3hNMAUAEfCJ5v-hWUQqmw" id="_VScZUAUAEfCJ5v-hWUQqmw" label="magasins_v.1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s3hNMQUAEfCJ5v-hWUQqmw" label="RAISONSOC" length="22" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s3hNMgUAEfCJ5v-hWUQqmw" label="TEL" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_s3hNMwUAEfCJ5v-hWUQqmw" label="ADRCP" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
