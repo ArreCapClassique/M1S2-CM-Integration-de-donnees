@@ -1,18 +1,18 @@
 SELECT
-    table_name AS "Source de données",
-    column_name AS "Colonne/Attribut",
+    table_name AS "数据源",
+    column_name AS "列 / 属性",
     CASE
         WHEN data_type = 'NUMBER'
             THEN
                 CASE
-                    WHEN data_precision IS NULL THEN 'Entier'
-                    WHEN data_scale IS NULL OR data_scale=0 THEN 'Entier de ' || data_precision || ' chiffres'
-                    ELSE 'Réel de ' || data_precision || ' chiffres, dont ' || data_scale || ' décimales'
+                    WHEN data_precision IS NULL THEN '整数'
+                    WHEN data_scale IS NULL OR data_scale=0 THEN '长度为 ' || data_precision || ' 的整数'
+                    ELSE '长度为 ' || data_precision || ' 的实数, 其中 ' || data_scale || ' 位小数'
                 END
-        WHEN data_type = 'VARCHAR2' THEN 'Chaîne de ' || data_length || ' car.'
-        WHEN data_type = 'FLOAT' THEN 'Réel'
+        WHEN data_type = 'VARCHAR2' THEN '长度为 ' || data_length || ' 的字符串'
+        WHEN data_type = 'FLOAT' THEN '实数'
         ELSE INITCAP(data_type)
-    END AS "Type et format",
+    END AS "类型和格式",
     CASE
         WHEN data_type = 'NUMBER'
             THEN
@@ -23,8 +23,8 @@ SELECT
                 END
         WHEN data_type = 'VARCHAR2' THEN 'VARCHAR2(' || data_length || ')'
         ELSE data_type
-    END AS "Type de la BD"
+    END AS "数据库类型"
 FROM USER_TAB_COLUMNS
 ORDER BY
-    "Colonne/Attribut",
-    "Source de données";
+    "列 / 属性",
+    "数据源";
